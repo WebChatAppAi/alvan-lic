@@ -1,0 +1,30 @@
+[package]
+name = "alvan-lic"
+version = "0.1.0"
+edition = "2021"
+authors = ["WebChatAppAi <contact@webchatappai.com>"]
+description = "A Rust crate for generating and validating time-based license keys with offline validation"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/WebChatAppAi/alvan-lic"
+keywords = ["license", "key", "validation", "generator", "offline"]
+categories = ["authentication", "cryptography"]
+readme = "README.md"
+
+[dependencies]
+hmac = "0.12"
+sha2 = "0.10"
+base64 = "0.21"
+chrono = "0.4"
+thiserror = "1.0"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+
+[[example]]
+name = "basic_usage"
+
+[[example]]
+name = "cli_tool"
+
+[[example]]
+name = "generate_key"
