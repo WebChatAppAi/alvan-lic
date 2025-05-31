@@ -19,6 +19,18 @@ Add this to your `Cargo.toml`:
 alvan-lic = "0.1.0"
 ```
 
+Or install the CLI tool directly:
+
+```bash
+cargo install alvan-lic
+```
+
+Then run the interactive CLI:
+
+```bash
+alvan-cli
+```
+
 ## Quick Start
 
 ```rust
